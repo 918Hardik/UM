@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+/* Import Roboto Font */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+thead {
+  background-color: #00796b; /* Teal */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tbody tr:nth-child(even) {
+  background-color: #e0f2f1; /* Light Teal */
+}
+
+tbody tr:hover {
+  background-color: #b2dfdb; /* Medium Teal */
+  cursor: pointer;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #00796b; /* Teal */
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #00796b; /* Teal */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button Styles */
+form button,
+.table-buttons button {
+  padding: 10px 20px;
+  background-color: #00796b; /* Teal */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+form button:hover,
+.table-buttons button:hover {
+  background-color: #004d40; /* Darker Teal */
+}
+
+.table-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Page Header */
+h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #00796b; /* Teal */
+  margin-top: 20px;
+}
+
+/* Container */
+.container {
+  padding: 20px;
 }
